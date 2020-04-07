@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true" >
+
+    <data>
+        <variable
+            name="mainViewModel"
+            type="com.ziran.meiliao.MainViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户信息"
+            android:onClick="@{mainViewModel::onUserInfoBtnClick}"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="好友列表"
+            android:onClick="@{mainViewModel::onFriendListBtnClick}"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="聊天记录"
+            android:onClick="@{mainViewModel::onChatListBtnClick}"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="粉丝列表"
+            android:onClick="@{mainViewModel::onFansBtnClick}"/>
+    </LinearLayout>
+</layout>

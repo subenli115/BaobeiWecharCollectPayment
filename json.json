@@ -1,0 +1,26 @@
+
+
+
+
+    {
+      "code":"000",
+      "desc":"请求成功",
+      "content":[
+        {"nickName":"张三", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/6/F/7/1_u011002668.jpg?1524473215"},
+        {"nickName":"李四", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/B/9/9/1_u012124438.jpg?1524473242"},
+        {"nickName":"王五", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/8/2/B/1_huachao1001.jpg?1524473255"},
+        {"nickName":"赵四", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/5/2/A/1_u010163442.jpg?1524474105"},
+        {"nickName":"刘能", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/1/8/C/1_t12x3456.jpg?1524474115"},
+        {"nickName":"大脚", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/9/3/6/1_yang_hui1986527.jpg?1524474142"},
+        {"nickName":"芙蓉", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/0/D/3/1_harvic880925.jpg?1524473315"},
+        {"nickName":"秀才", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/E/9/C/1_ccsutofly.jpg?1524474170"},
+        {"nickName":"掌柜", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/5/6/E/1_luoshengyang.jpg?1524473342"},
+        {"nickName":"大嘴", "lastMessage":"", "imgUrl":"https://avatar.csdn.net/F/F/5/1_lmj623565791.jpg?1524474190"}
+      ]
+    }
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias = 'meiliaosigneddebug'
+            keyPassword 'meiliao123'
+            storePassword 'meiliao123'
+            storeFile file('C:\\Users\\Administrator\\Desktop\\meiliao\\app\\keystore\\debug.jks')
+        }
+        release {
+            storeFile file('C:\\Users\\Administrator\\Desktop\\meiliao\\app\\keystore\\meiliao.jks')
+            storePassword 'meiliao123'
+            keyPassword 'meiliao123'
+            keyAlias = 'meiliaosigned'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ziran.meiliao"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.4.0', {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+
+    // RxJava
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+}
